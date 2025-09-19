@@ -1,6 +1,5 @@
 import pygame
 import os
-import sys
 
 # Inicializando o Pygame
 pygame.init()
@@ -20,8 +19,6 @@ if os.path.exists(image_file):
     img_rect = img.get_rect(center=(WIDTH // 2, HEIGHT // 2))  # Centraliza a imagem
 else:
     print("Imagem não encontrada!")
-    pygame.quit()
-    sys.exit()
 
 # Loop principal do jogo
 running = True
@@ -40,4 +37,5 @@ while running:
     pygame.display.flip()
 
 # Finalizar o Pygame
+
 pygame.quit()
